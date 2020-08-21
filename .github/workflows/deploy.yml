@@ -1,0 +1,17 @@
+name: deploy
+on:
+  push:
+    branches:
+      - 'master'
+    paths:
+      - 'src/**'
+      - 'package.json'
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install dependencies
+      run: npm i
+    - name: Deployment to GitHub Pages
+      run: npm run deploy
