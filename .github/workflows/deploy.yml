@@ -22,6 +22,6 @@ jobs:
         target_branch: gh-pages
         build_dir: dist
         author: Beata Detkova <beata.detkova.jr@gmail.com>
-        commiter: Beata Detkova <beata.detkova.jr@gmail.com>
+        committer: Beata Detkova <beata.detkova.jr@gmail.com>
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
