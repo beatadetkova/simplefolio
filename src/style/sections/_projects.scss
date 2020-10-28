@@ -28,6 +28,10 @@
       text-align: left;
       ul {
         padding-inline-start: 12px;
+        li {
+          font-size: 13px;
+          font-style: italic;
+        }
       }
 
       @include respond(phone) {
